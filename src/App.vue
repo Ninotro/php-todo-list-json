@@ -7,14 +7,15 @@ export default {
       tasks: [],
       newTask: {
         titolo: "",
-        descrizione: ""
+        
       }
     };
   },
   methods: {
     onSubmit() {
-      const url = "http://localhost/php-todo-list-json/php/index.php";
+      const url = "http://localhost/php-todo-list-json/php/postStudent.php";
       const data = this.newTask;
+      console.log(this.newTask);
       const headers = {
         headers: { "Content-Type": "multipart/form-data" }
       };
@@ -24,7 +25,7 @@ export default {
         .then(response => {
           this.tasks = response.data;
           this.newTask.titolo = "";
-          this.newTask.descrizione = "";
+          
         })
         .catch(error => console.error("Errore nella richiesta POST", error));
     }
@@ -50,20 +51,14 @@ export default {
       </li>
     </ul>
     <form @submit.prevent="onSubmit">
-      <label for="title">Title</label>
+      <label for="title">Cose da fare</label>
       <input type="text" name="titolo" id="titolo" v-model="newTask.titolo" />
       <br />
-      <label for="description">Description</label>
-      <input
-        type="text"
-        name="descrizione"
-        id="descrizione"
-        v-model="newTask.descrizione"
-      />
-      <br />
+      
       <input type="submit" value="Add Task" />
     </form>
   </div>
 </template>
 
-<style></style>
+<style>
+</style>
