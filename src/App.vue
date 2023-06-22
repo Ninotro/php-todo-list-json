@@ -46,7 +46,7 @@ export default {
     <h1>To-Do List</h1>
     <ul>
       <li v-for="(task, index) in tasks" :key="index">
-        {{ task.title }} - {{ task.description }}
+        {{ task.titolo }} 
       </li>
     </ul>
     <form @submit.prevent="onSubmit">

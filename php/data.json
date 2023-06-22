@@ -1,22 +1,22 @@
 [
     {
-      "titolo": "Comprare generi alimentari",
-      "descrizione": "Latte, uova, pane"
+      "titolo": "Comprare generi alimentari"
+      
     },
     {
-      "titolo": "Completare i compiti",
-      "descrizione": "Compito di matematica"
+      "titolo": "Completare i compiti"
+     
     },
     {
-      "titolo": "Chiamare Giovanni",
-      "descrizione": "Discutere del progetto"
+      "titolo": "Chiamare Giovanni"
+      
     },
     {
-      "titolo": "Andare a correre",
-      "descrizione": "Percorso di 5 km"
+      "titolo": "Andare a correre"
+      
     },
     {
-      "titolo": "Nuova attività",
-      "descrizione": "Descrizione della nuova attività"
+      "titolo": "Nuova attività"
+      
     }
   ]
